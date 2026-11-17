@@ -158,7 +158,7 @@ function Hero() {
   const cardY = useTransform(sy, (v) => v * 22);
   const px = useTransform(sx, (v) => (v + 0.5) * 100);
   const py = useTransform(sy, (v) => (v + 0.5) * 100);
-  const spot = useMotionTemplate`radial-gradient(520px circle at ${px}% ${py}%, rgba(200,16,46,.28), transparent 62%)`;
+  const spot = useMotionTemplate`radial-gradient(520px circle at ${px}% ${py}%, rgba(255,255,255,.09), transparent 62%)`;
   const [w, setW] = useState(0);
   useEffect(() => {
     const t = setInterval(() => setW((i) => (i + 1) % rotating.length), 2600);
